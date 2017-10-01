@@ -1,0 +1,6 @@
+#!/bin/bash
+#curl requests created from Postman
+
+curl 'https://www.mcdonalds.com/wws/json/getItemDetails.htm?country=CA&language=en&showLiveData=true&item=200139' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36' -H 'Accept: application/json, text/plain, */*' -H 'Referer: https://www.mcdonalds.com/ca/en-ca/about-our-food/nutrition-calculator.html' -H 'Cookie: renderid=0; views=4; mcd-ageVerify=true; _refs=www.mcdonalds.com; MCDCountry_code=CA' -H 'Connection: keep-alive' --compressed -o itemDetails.json
+
+curl 'https://www.mcdonalds.com/wws/json/getItemList.htm?country=CA&language=en&showLiveData=true&nutrient_req=Y&item=200139(300118|300116|300119|300117|300015|300097|300114|300099)-' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36' -H 'Accept: application/json, text/plain, */*' -H 'Referer: https://www.mcdonalds.com/ca/en-ca/about-our-food/nutrition-calculator.html' -H 'Cookie: renderid=0; views=4; mcd-ageVerify=true; _refs=www.mcdonalds.com; MCDCountry_code=CA' -H 'Connection: keep-alive' --compressed -o itemList.json
